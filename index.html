@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>satirical-shorts · personal-use TikTok video generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="brand">
+  <a href="/tiktok-app/">satirical-shorts</a>
+  <span class="nav">
+    <a href="tos.html">Terms</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="https://github.com/FloGuillaud" target="_blank" rel="noreferrer">GitHub</a>
+  </span>
+</header>
+
+<main>
+  <h1>satirical-shorts</h1>
+  <p class="lead">A personal-use Node.js app that generates short vertical videos from news articles and uploads them as drafts to the operator's TikTok account.</p>
+
+  <p>Maintained by <strong>Florent Guillaud</strong> — <a href="mailto:florent.guillaud@gmail.com">florent.guillaud@gmail.com</a></p>
+
+  <h2>What it does</h2>
+  <ol>
+    <li>Scrapes a news article URL (text + images + embedded videos)</li>
+    <li>Generates a short, satirical script with Google Gemini</li>
+    <li>Synthesizes voice-over with Gemini TTS</li>
+    <li>Aligns the audio with whisperX for word-level captions</li>
+    <li>Fetches relevant b-roll videos from Pexels</li>
+    <li>Composes a 1080×1920 / 30 fps MP4 with Remotion (kinetic captions, Ken Burns, multi-clip cuts)</li>
+    <li>Uploads the final video to the operator's own TikTok drafts via the official Content Posting API</li>
+  </ol>
+
+  <h2>Scope</h2>
+  <ul>
+    <li><strong>Personal, non-commercial use only.</strong> A single operator (the developer) uploads to their own TikTok account.</li>
+    <li>Not a service offered to third parties.</li>
+  </ul>
+
+  <h2>Legal</h2>
+  <ul>
+    <li><a href="tos.html">Terms of Service</a></li>
+    <li><a href="privacy.html">Privacy Policy</a></li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>
+    <strong>Florent Guillaud</strong><br>
+    <a href="mailto:florent.guillaud@gmail.com">florent.guillaud@gmail.com</a>
+  </p>
+</main>
+
+<footer>Last updated: 2026-05-08</footer>
+</body>
+</html>

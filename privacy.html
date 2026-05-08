@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy · satirical-shorts</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="brand">
+  <a href="/tiktok-app/">satirical-shorts</a>
+  <span class="nav">
+    <a href="tos.html">Terms</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="https://github.com/FloGuillaud" target="_blank" rel="noreferrer">GitHub</a>
+  </span>
+</header>
+
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="lead">Last updated: 2026-05-01</p>
+
+  <p>This privacy policy describes how the <strong>satirical-shorts</strong> application (&quot;the App&quot;), operated by <strong>Florent Guillaud</strong> (&quot;we&quot;, &quot;us&quot;), collects, uses, and discloses information when you connect your TikTok account to upload generated videos.</p>
+
+  <p>The App is a personal-use tool that generates short vertical videos from news articles and uploads them to the user's own TikTok account drafts.</p>
+
+  <h2>1. Information we collect</h2>
+  <p>When you authorize the App to access your TikTok account, we receive and store:</p>
+  <ul>
+    <li><strong>OAuth tokens</strong> (access token, refresh token) issued by TikTok</li>
+    <li><strong>Basic profile information</strong> that TikTok exposes via the <code>user.info.profile</code> scope (display name, profile link, etc.)</li>
+    <li><strong>Video files</strong> that you have generated locally and elected to upload</li>
+  </ul>
+  <p>We do <strong>not</strong> collect or transmit any of the following:</p>
+  <ul>
+    <li>Passwords (TikTok's OAuth flow never shares your password with us)</li>
+    <li>TikTok content from accounts other than yours</li>
+    <li>Browsing history, contacts, or device identifiers</li>
+  </ul>
+
+  <h2>2. How we use the information</h2>
+  <ul>
+    <li><strong>OAuth tokens</strong> are used solely to authenticate API calls to TikTok on your behalf, in particular to upload videos to the inbox of your account via the Content Posting API.</li>
+    <li><strong>Profile information</strong> is used to confirm the identity of the authenticated account and is not shared.</li>
+    <li><strong>Video files</strong> are sent to TikTok's upload endpoints exclusively; copies remain on your local machine and are not transmitted elsewhere by us.</li>
+  </ul>
+
+  <h2>3. Storage and retention</h2>
+  <ul>
+    <li>OAuth tokens are stored locally on the user's machine in a <code>.env</code> file. They are not transmitted to any server controlled by us.</li>
+    <li>Generated videos and intermediate artifacts (script, audio, alignment) live in the user's local <code>out/</code> directory.</li>
+    <li>The refresh token is valid for approximately 365 days; afterwards, you must re-authorize.</li>
+  </ul>
+
+  <h2>4. Third-party services</h2>
+  <p>To produce a video, the App calls third-party APIs. Each provider has its own privacy policy:</p>
+  <ul>
+    <li><strong>Google Gemini</strong> (script generation, TTS, image relevance scoring) — <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">policies.google.com/privacy</a></li>
+    <li><strong>Pexels</strong> (b-roll video search) — <a href="https://www.pexels.com/privacy-policy/" target="_blank" rel="noreferrer">pexels.com/privacy-policy</a></li>
+    <li><strong>TikTok Content Posting API</strong> (final upload) — <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en" target="_blank" rel="noreferrer">tiktok.com/legal/privacy-policy</a></li>
+  </ul>
+  <p>Article URLs that the user submits are fetched, parsed, and any embedded images / videos may be downloaded for use as visual material. We do not redistribute them outside of the user's own TikTok upload.</p>
+
+  <h2>5. Your rights</h2>
+  <p>Because the App stores TikTok tokens locally on your machine, you can revoke access at any time by:</p>
+  <ul>
+    <li>Deleting the <code>.env</code> file or removing the <code>TIKTOK_REFRESH_TOKEN</code> line</li>
+    <li>Revoking the App's access in your TikTok account settings (<a href="https://www.tiktok.com/setting/manage-app-permissions" target="_blank" rel="noreferrer">tiktok.com/setting/manage-app-permissions</a>)</li>
+  </ul>
+  <p>You can request deletion of any data we may hold by contacting us at the address below.</p>
+
+  <h2>6. Children</h2>
+  <p>The App is not intended for users under 13. Do not authorize the App if you are under 13.</p>
+
+  <h2>7. Changes to this policy</h2>
+  <p>We may update this policy. Material changes will be reflected by updating the &quot;Last updated&quot; date at the top of this document.</p>
+
+  <h2>8. Contact</h2>
+  <p>For any question regarding this privacy policy or the App, contact:</p>
+  <p>
+    <strong>Florent Guillaud</strong><br>
+    Email: <a href="mailto:florent.guillaud@gmail.com">florent.guillaud@gmail.com</a>
+  </p>
+</main>
+
+<footer>Last updated: 2026-05-01</footer>
+</body>
+</html>
